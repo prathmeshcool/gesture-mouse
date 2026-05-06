@@ -1,4 +1,4 @@
-# Gesture Controlled Virtual Mouse
+# Gesture Controlled V-Mouse
 
 A computer vision-based virtual mouse built using Python, OpenCV, and MediaPipe.
 
