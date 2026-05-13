@@ -1,14 +1,15 @@
-# Gesture Controlled V-Mouse
+# Gesture Controlled Virtual Mouse
 
-A computer vision-based virtual mouse built using Python, OpenCV, and MediaPipe.
+A real-time gesture-controlled virtual mouse built using Python, OpenCV, and MediaPipe.
 
 ## Features
 
 * Real-time hand tracking
 * Cursor movement using gestures
-* Left click, right click, drag and drop
-* Scroll support
-* Gesture smoothing for stable cursor control
+* Left click and right click
+* Drag and drop support
+* Scroll control
+* Cursor smoothing for stable movement
 
 ## Tech Stack
 
@@ -19,10 +20,11 @@ A computer vision-based virtual mouse built using Python, OpenCV, and MediaPipe.
 
 ## How It Works
 
-The system captures webcam frames using OpenCV and detects hand landmarks using MediaPipe. Different finger configurations are mapped to mouse actions such as movement, clicks, dragging, and scrolling.
+The system captures webcam frames using OpenCV and detects hand landmarks using MediaPipe. Finger positions and landmark distances are analyzed to classify gestures, which are then mapped to mouse actions such as cursor movement, clicking, dragging, and scrolling.
 
 ## Run Locally
 
+```bash
 conda activate mouse_fix
 python Gesture_Controller.py
-
+```
